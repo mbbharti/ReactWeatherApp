@@ -1,13 +1,99 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(202, 210, 216);
+}
+.heading{
+  text-align: center;
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: rgb(64, 84, 102);
+  text-shadow: 2px 2px 10px gray;
+}
+.mainDiv{
+  border-radius: 1rem;
+  width: 30rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: rgb(177, 213, 214);
+  box-shadow: 2px 2px 5px rgb(41, 47, 61);
+}
+.allContent{
+  padding: 2rem;
+}
+.inputDiv input{
+  width: 22rem;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+.inputDiv input:hover{
+  padding: 5px 5px 5px 20px;
+  box-shadow: 4px 4px 10px rgb(95, 88, 88);
+}
+.contentDiv{
+  margin-top: 5rem;
+  /* background-color: hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(51, 47, 47);
+}
+.cityName{
+  display: flex;
+}
+.cityName h1{
+  font-size: 4rem;
+  max-width: 20rem; 
+  text-shadow: 2px 2px 10px wheat;
+}
+.cloudIcon{
+  color: white;
+  font-size: 3.2rem;
+  margin-right: 1rem;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  text-shadow: 1.5px 1.5px 20px rgb(75, 61, 61);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes up-down{
+  0%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(-1rem);
+  }
+  
 }
+
+.temp{
+  margin-top: 2.2rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px wheat;
+}
+.minMax{
+  font-size: 1.2rem;
+}
+.noDataFound{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  color: white;
+}
+.noDataFound p{
+  font-size: 1rem;
+}
+.firstP{
+  font-size: 1.5rem;
+}
+
